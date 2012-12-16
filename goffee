@@ -1,0 +1,4 @@
+#! /bin/sh
+export GI_TYPELIB_PATH="/usr/lib/gnome-shell/:/usr/lib/mutter:/usr/lib/girepository-1.0/"
+export GJS_PATH="/usr/share/gnome-shell/js/"
+cat $1 | coffee -s -c | gjs
